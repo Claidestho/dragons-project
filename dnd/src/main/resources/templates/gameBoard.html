@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
     <title>Game Board</title>
 </head>
 <body>
@@ -11,6 +12,15 @@
         <div class="col-sm">
             <h2>Game Board</h2>
             <button class="btn btn-primary">Throw dice</button>
+            <br>
+            <br>
+            <div class="board">
+                <div class="cell">123</div>
+                <div class="cell">123</div>
+                <div class="cell">123</div>
+                <div class="cell">123</div>
+                <div class="cell">123</div>
+            </div>
         </div>
         <div class="col-sm"></div>
         <div class="col-sm">
@@ -30,6 +40,7 @@
                 <tr>
                     <th scope="row">Player name:</th>
                     <th scope="row">123</th>
+<!--                    <th scope="row" th:utext="${hero.name}">123</th>-->
                 </tr>
                 <tr>
                     <th scope="row">Player type:</th>
