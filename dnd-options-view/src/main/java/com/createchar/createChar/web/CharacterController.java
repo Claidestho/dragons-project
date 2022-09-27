@@ -116,4 +116,9 @@ public class CharacterController {
         restTemplate.delete(BASE_URL + id);
         return "redirect:/liste-des-personnages";
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String showHome(){
+        return "gameStart";
+    }
 }

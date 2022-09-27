@@ -7,6 +7,7 @@ public class Character {
     private String name;
     private String type;
     private int hp;
+    private int position;
 
 
     //constructeur
@@ -57,6 +58,11 @@ public class Character {
     public void setHp(int hp) {
         this.hp = hp;
     }
+
+    public int getPosition() { return position; }
+
+    public void setPosition(int position) { this.position = position; }
+
     //Adaption à nos besoin du toString
     @Override
     public String toString() {
